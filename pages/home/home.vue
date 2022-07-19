@@ -1,5 +1,9 @@
 <template>
+	
 	<view>
+		<view class="search-bar">
+			<searchBar></searchBar>
+		</view>
 		<!-- 轮播图 -->
 		<swiper 
 		v-if="swiperList.length>0"
@@ -180,5 +184,11 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
+	}
+	
+	.search-bar {
+		position: sticky;
+		top: 0;
+		z-index: 999;
 	}
 </style>
