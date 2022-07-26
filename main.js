@@ -27,16 +27,19 @@ $http.afterRequest = function(options){
 
 
 const app = new Vue({
-    ...App
+    ...App,
 })
-app.$mount()
+app.$mount();
 // #endif
 
 // #ifdef VUE3
 import { createSSRApp } from 'vue'
+import store from "@/store/store.js"
 import App from './App.vue'
 export function createApp() {
   const app = createSSRApp(App)
+  app.use(store);
+  console.log(store,'app');
   return {
     app
   }
