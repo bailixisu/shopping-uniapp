@@ -49,9 +49,11 @@
             "urlCheck" : false,
             "es6" : true,
             "postcss" : true,
-			"checkSiteMap":false
+            "checkSiteMap" : false,
+            "minified" : true
         },
-        "usingComponents" : true
+        "usingComponents" : true,
+        "permission" : {}
     },
     "vueVersion" : "3"
 }
